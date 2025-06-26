@@ -1,0 +1,438 @@
+@import 'variables';
+
+
+.top-corzina{
+    height: 400px;
+    background-image: url(img/corzina-top.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.heading-big{
+    color: $tophedercolor;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 127px;
+}
+.corzina{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+    &__name-box{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        padding-right: 27px;
+    }
+    &__name{
+        color: $text-color-black;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__item{
+        border-top: 0.5px solid rgb(202, 205, 216);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &_1{
+             padding-top: 25px;
+        }
+    }
+    &__content{
+        grid-column: span 8;
+    }
+    &__form{
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        height: 556px;
+        grid-column: span 4;
+    }
+    &__form-title{
+        color: $text-color-black;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 42px;
+        margin-bottom: 35px;
+    }
+    &__form-input{
+        display: flex;
+        flex-direction: column;
+        gap: 41.5px;
+        margin-bottom: 64.5px;
+        padding-left: 27px;
+        width: 288px;
+    }
+    &__form-input-name{
+         border: none;  
+        border-bottom: 1px solid rgb(202, 205, 216);
+        background: transparent;
+        font: inherit;   
+    }
+    &__form-input-name::placeholder{
+        color: $text-color-black;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        
+    }
+    &__form-input-namber{
+         border: none;  
+        border-bottom: 1px solid rgb(202, 205, 216);
+        background: transparent;
+        font: inherit;   
+    }
+    &__form-input-namber::placeholder{
+        color: $text-color-black;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+    }
+     &__form-input-address{
+        border: none;  
+        border-bottom: 1px solid rgb(202, 205, 216);
+        background: transparent;
+        font: inherit;   
+     }
+    &__form-input-address::placeholder{
+        color: $text-color-black;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        
+    }
+    &__form-price{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 18px;
+    }
+    &__form-price-text{
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    &__form-price-summ{
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    &__form-button-box{
+        text-align: center;
+    }
+    &__form-button{
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        width: 290px;
+        height: 41px;
+        margin: auto;
+        color: $text-color-black;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+       
+    }
+    &__info{
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__info-name{
+        color: $text-color-black;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__info-text{
+        color: $text-color-grey;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__info-price{
+        color: rgb(5, 5, 5);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__left{
+        display: flex;
+        gap: 32px;
+    }
+    &__link{
+        color: $text-color-black;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+    &__kvo{
+        border-radius: 6px;
+        background: rgb(247, 246, 246);
+        width: 71px;
+        height: 51px;
+        border-color:  transparent;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+    &__kvo-input{
+        width: 47px;
+        height: 27px;
+        text-align: center;
+        background: rgb(247, 246, 246);
+        border: none;
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        letter-spacing: 0px;
+       
+    }
+    &__kvo-button{
+         display: flex;
+        flex-direction: column;
+
+    }
+
+    &__kvo-button-top{
+         width: 6px;
+        height: 16px;
+        background-image: url(img/corzina-input-top.jpeg);
+        background-position: center;
+        border: none;
+         background-repeat: no-repeat;
+         background-color: rgb(247, 246, 246);
+    }
+    &__kvo-button-bottom{
+         width: 6px;
+        height: 16px;
+        background-image: url(img/corzina-input-bottom.svg);
+        background-position: center;
+        border: none;
+        background-repeat: no-repeat;
+    }
+    &__button-box{
+        display: flex;
+        gap: 7px;
+        width: 407px;
+        padding-top: 18px;
+    }
+    &__link-box{
+        display: flex;
+        gap: 30px;
+    }
+    &__button-clean{
+        width: 200px;
+        height: 37px;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        background-color: transparent;
+        color: rgb(2, 2, 2);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+     &__button-go{
+        width: 200px;
+        height: 37px;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        background-color: transparent;
+        color: rgb(2, 2, 2);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}
+.product-content-corzina{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+}
+//Стили для планшета//
+@media (max-width: 1024px){
+    .center{
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+    .corzina{
+    grid-template-columns: repeat(8, 1fr);
+    row-gap: 64px;
+        
+    &__button-box{
+        padding-top: 0px;
+    }
+    }
+    .product-content-corzina{
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .center{
+      padding-left: calc(50% - 343px/2);
+      padding-right: calc(50% - 343px/2);
+    }
+     .header{
+      padding-top: 32px;
+      border-bottom: none;
+
+      &__logo{
+        width: 99px;
+      }
+      &__input{
+        display: none;
+      }
+      &__nav{
+        display: none;
+      }
+      &__nav-mobile{
+        display: flex;
+        gap: 32px;
+      }
+    }
+    .heading-big{
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+    }
+    .corzina{
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 92px;
+         row-gap: 48px;
+
+         &__left{
+            grid-column: span 3;
+         }
+         &__info{
+            max-width: 276px;
+            width: 100%;
+         }
+         &__content{
+            grid-column: span 4;
+         }
+         &__kvo{
+            grid-column: span 1;
+         }
+        &__img{
+            display: none;
+        }
+        &__name-box{
+            display: none;
+        }
+        &__item{
+            padding-top: 18px;
+            padding-bottom: 24px;
+            grid-template-columns: repeat(4, 1fr);
+            display: grid;
+        }
+        &__info-name{
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__info-text{
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &__info-price{
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__form-input{
+            max-width: 288px;
+            width: 100%;
+        }
+        &__form-button{
+            max-width: 290px;
+            width: 100%;
+        }
+        &__button-box{
+            max-width: 407px;
+            width: 100%;
+            gap: 14px;
+        }
+        &__button-clean{
+            max-width: 166px;
+            width: 100%;
+            font-size: 12px; 
+           line-height: 15px;
+        }
+        &__button-go-link{
+             max-width: 163px;
+            width: 100%;
+        }
+        &__button-go{
+            max-width: 163px;
+            width: 100%;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    .product-box{
+        &_corzina{
+             
+            margin-top: 16px;
+        }
+    }
+    .product-content-corzina{
+        gap: 32px;
+        display: flex;
+    }
+}
