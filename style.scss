@@ -68,6 +68,7 @@ body {
         background: transparent;
         font: inherit;
         padding-left: 32px;
+        padding-right: 32px;
 
         &::placeholder{
             color: $text-color-white;
@@ -83,6 +84,104 @@ body {
             background-color: $background-color-white;
         }
     }
+    .link-corzina{
+      position: relative;
+    }
+
+    .form-container:hover .corzina-form{
+       opacity: 1;
+        visibility: visible;
+    }
+    .corzina-form{
+        background-color: #fff;
+        box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+        padding: 40px 48px;
+        align-items: flex-end;
+        z-index: 1;
+        max-height: 480px;
+        max-width: 573px;
+        position: absolute;
+        right: 0px;
+        top: 37px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .corzina{
+      &__item-index{
+          border-top: 0.5px solid rgb(202, 205, 216);
+          padding-top: 24px;
+          padding-bottom: 24px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          
+
+          &_1{
+            border-top: none;
+            padding-top: 0px;
+          }
+      }
+      &__img-index{
+        max-width: 144px;
+        max-height: 144px;
+      }
+      &__info-index{
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      &__link-box-index{
+        display: flex;
+        gap: 24px;
+        padding-top: 42px;
+      }
+      &__price-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__form-price-index{
+         display: flex;
+        justify-content: flex-start;
+      }
+      &__form-price-text-index{
+          color: rgb(0, 0, 0);
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 29px;
+          letter-spacing: 0px;
+      }
+      &__form-price-summ-index{
+          color: rgb(0, 0, 0);
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 29px;
+          letter-spacing: 0px;
+      }
+      &__form-button-index{
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        width: 207px;
+        height: 40px;
+        margin: auto; 
+        color: $text-color-black;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        background-color: transparent;
+      }
+      &__form-button-index:hover{
+        color: $text-color-white;
+        background-color: $background-color-black
+      }
+  }
 
     &__nav-mobile{
       display: none;
@@ -896,6 +995,7 @@ margin-top: 64px;
             width: 260px;
             height: 40px;
             padding-left: 17px;  
+            padding-right: 17px;  
 
             &::placeholder{
                 color: rgb(196, 196, 196);
@@ -1042,6 +1142,14 @@ margin-top: 64px;
         &_big{
           height: 244px;
         }
+      }
+    }
+    .catalog-box{
+
+      &__title{
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
       }
     }
     .product-box{

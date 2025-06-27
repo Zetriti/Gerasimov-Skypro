@@ -367,6 +367,7 @@
     font-size: 48px;
     line-height: 59px;
     text-align: center;
+    margin-top: 82px;
   }
   .corzina {
     grid-template-columns: repeat(4, 1fr);
@@ -513,6 +514,7 @@ body {
   background: transparent;
   font: inherit;
   padding-left: 32px;
+  padding-right: 32px;
 }
 .header__input::-moz-placeholder {
   color: rgb(255, 255, 255);
@@ -534,6 +536,99 @@ body {
 }
 .header__input:focus {
   background-color: rgb(255, 255, 255);
+}
+.header .link-corzina {
+  position: relative;
+}
+.header .form-container:hover .corzina-form {
+  opacity: 1;
+  visibility: visible;
+}
+.header .corzina-form {
+  background-color: #fff;
+  box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+  padding: 40px 48px;
+  align-items: flex-end;
+  z-index: 1;
+  max-height: 480px;
+  max-width: 573px;
+  position: absolute;
+  right: 0px;
+  top: 37px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.header .corzina__item-index {
+  border-top: 0.5px solid rgb(202, 205, 216);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header .corzina__item-index_1 {
+  border-top: none;
+  padding-top: 0px;
+}
+.header .corzina__img-index {
+  max-width: 144px;
+  max-height: 144px;
+}
+.header .corzina__info-index {
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header .corzina__link-box-index {
+  display: flex;
+  gap: 24px;
+  padding-top: 42px;
+}
+.header .corzina__price-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .corzina__form-price-index {
+  display: flex;
+  justify-content: flex-start;
+}
+.header .corzina__form-price-text-index {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0px;
+}
+.header .corzina__form-price-summ-index {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+}
+.header .corzina__form-button-index {
+  box-sizing: border-box;
+  border: 1px solid rgb(4, 4, 4);
+  border-radius: 20px;
+  width: 207px;
+  height: 40px;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  background-color: transparent;
+}
+.header .corzina__form-button-index:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 .header__nav-mobile {
   display: none;
@@ -1233,6 +1328,7 @@ body {
   width: 260px;
   height: 40px;
   padding-left: 17px;
+  padding-right: 17px;
 }
 .footer__from-email::-moz-placeholder {
   color: rgb(196, 196, 196);
@@ -1370,6 +1466,11 @@ body {
   }
   .for__item_big {
     height: 244px;
+  }
+  .catalog-box__title {
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
   }
   .product-box {
     padding-top: 32px;

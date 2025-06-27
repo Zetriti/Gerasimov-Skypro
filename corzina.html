@@ -18,7 +18,7 @@
     <div class="top-corzina center">
         <header class="header">
             <a href="index.html"><img class="header__logo" src="img/logo.svg" alt="Logo header"></a>
-            <input class="header__input" type="text" placeholder="Поиск">
+            <input class="header__input" type="text" required placeholder="Поиск">
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__li"><a href="catalog.html " class="header__nav-link">Каталог</a></li>
@@ -99,12 +99,12 @@
                 <a href="catalog.html" class="corzina__button-go-link"><button class="corzina__button-go">Продолжить покупки</button></a>
             </div>
        </div>
-            <div class="corzina__form">
+            <form class="corzina__form">
                 <h3 class="corzina__form-title">Оформление заказа</h3>
                 <div class="corzina__form-input">
-                    <input class="corzina__form-input-name" type="text" placeholder="Имя Фамилия">
-                    <input class="corzina__form-input-namber" type="text" placeholder="+ 7 904 000 80 80">
-                    <input class="corzina__form-input-address" type="text" placeholder="Адрес доставки">
+                    <input class="corzina__form-input-name" type="text" required placeholder="Имя Фамилия">
+                    <input class="corzina__form-input-namber" type="text" required placeholder="+ 7 904 000 80 80">
+                    <input class="corzina__form-input-address" type="text" required placeholder="Адрес доставки">
                 </div>
                 <div class="corzina__form-price">
                     <p class="corzina__form-price-text">Итого:&nbsp;</p>
@@ -113,7 +113,7 @@
                 <div class="corzina__form-button-box">
                     <button class="corzina__form-button">Оформить заказ</button>
                 </div>
-            </div>
+            </form>
     </div>
     <section class="product-box product-box_corzina center">
         <h2 class="product-box__title">Специальные предложения</h2>
@@ -232,11 +232,11 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__from">
+            <form class="footer__from">
                 <p class="footer__from-text">Получайте наши новости и обновления</p>
-                <input type="email" class="footer__from-email" placeholder="Ваш e-mail">
+                <input type="email" class="footer__from-email" required placeholder="Ваш e-mail">
                 <button class="footer__from-button">Подписаться</button>
-            </div>
+            </form>
         </div>
     </footer>
 </body>
