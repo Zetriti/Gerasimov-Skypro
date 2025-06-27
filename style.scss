@@ -115,7 +115,7 @@ body {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
-          
+          gap: 32px;
 
           &_1{
             border-top: none;
@@ -125,6 +125,11 @@ body {
       &__img-index{
         max-width: 144px;
         max-height: 144px;
+      }
+      &__left-index{
+        display: flex;
+        gap: 24px;
+        width: 358px;
       }
       &__info-index{
         width: 276px;

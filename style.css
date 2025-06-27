@@ -566,6 +566,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 32px;
 }
 .header .corzina__item-index_1 {
   border-top: none;
@@ -574,6 +575,11 @@ body {
 .header .corzina__img-index {
   max-width: 144px;
   max-height: 144px;
+}
+.header .corzina__left-index {
+  display: flex;
+  gap: 24px;
+  width: 358px;
 }
 .header .corzina__info-index {
   width: 276px;
